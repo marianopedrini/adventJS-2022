@@ -7,6 +7,8 @@ Consiste en resolver un problema por día desde el 1/12 al 24/12 siguiendo la tr
 
 ## Consignas
 #### 01 - wrapping
+`Dificultad: FACIL` \
+\
 Este año los elfos han comprado una máquina que envuelve regalos. Pero… ¡no viene programada! Necesitamos crear un algoritmo que le ayude en la tarea.
 
 A la máquina se le pasa un array con los regalos. Cada regalo es un string. Necesitamos que la máquina envuelva cada regalo en papel de regalo y lo coloque en un array de regalos envueltos.
@@ -36,6 +38,8 @@ Ah, y no modifiques (mutes) el array original.
 ---
 
 #### 02 - countHours
+`Dificultad: FACIL` \
+\
 Un millonario ha comprado una red social y no trae buenas noticias. Ha anunciado que cada vez que una jornada de trabajo se pierde por un día festivo, habrá que compensarlo con dos horas extra otro día de ese mismo año.
 
 Obviamente la gente que trabaja en la empresa no le ha hecho ni pizca de gracia y están preparando un programa que les diga el número de horas extras que harían en el año si se aplicara la nueva norma.
@@ -62,6 +66,8 @@ Cosas a tener en cuenta y consejos:
 ---
 
 #### 03 - distributeGifts
+`Dificultad: FACIL` \
+\
 Tienes una caja de regalos de Navidad que Santa Claus quiere entregar a los niños. Cada regalo está representado por una cadena. Santa Claus tiene un trineo que puede llevar un peso limitado, y cada regalo dentro de la caja tiene un peso que es igual al número de letras en el nombre del regalo.
 
 Santa Claus también tiene una lista de renos que pueden ayudarlo a entregar los regalos. Cada reno tiene un límite de peso máximo que puede llevar. El límite de peso máximo de cada reno es igual a dos veces el número de letras en su nombre.
@@ -85,6 +91,8 @@ Cosas a tener en cuenta:
 ---
 
 #### 04 - fitsInOneBox
+`Dificultad: MEDIO` \
+\
 Santa Claus necesita hacer una revisión de sus cajas de regalos para asegurarse de que puede empaquetarlas todas en su trineo. Cuenta con una serie de cajas de diferentes tamaños, que se caracterizan por su longitud, anchura y altura.
 
 Tu tarea es escribir una función que, dada una lista de cajas con sus tamaños, determine si es posible empaquetar todas las cajas en una sola de manera que cada caja contenga a otra (que a su vez contenga a otra, y así sucesivamente).
@@ -128,6 +136,8 @@ Cosas a tener en cuenta:
 ---
 
 #### 05 - getMaxGifts
+`Dificultad: DIFICIL` \
+\
 Para no cansar a los renos, Papá Noel quiere dejar el máximo número de regalos haciendo el menor número posible de viajes.
 
 Tiene un array de ciudades donde cada elemento es el número de regalos que puede dejar allí. [12, 3, 11, 5, 7]. Por otro lado, el límite de regalos que caben en su saco. Y, finalmente, el número de ciudades máximo que sus renos pueden visitar.
@@ -168,4 +178,50 @@ A tener en cuenta:
 - giftsCities.length >= 1
 - maxCities >= 1
 - El número de maxCities puede ser mayor a giftsCities.length
+---
+
+#### 06 - createCube
+`Dificultad: MEDIO` \
+\
+Una pareja de entusiastas de la navidad ha creado una empresa de adornos navideños. El primer adorno que quieren fabricar es un cubo que se pone en los árboles.
+
+El problema es que tienen que programar la máquina y no saben cómo hacerlo. Nos han pedido ayuda para lograrlo.
+
+Para crear los cubos se le pasa un número con el tamaño deseado al programa y este devuelve un string con el diseño de ese tamaño. Por ejemplo, si le pasamos un 3, el programa debe devolver un cubo de 3x3x3:
+
+```javascript
+const cube = createCube(3)
+
+  /\_\_\_\
+ /\/\_\_\_\
+/\/\/\_\_\_\
+\/\/\/_/_/_/
+ \/\/_/_/_/
+  \/_/_/_/
+```
+Como ves el cubo tiene tres caras visualmente. Los símbolos que se usan para construir las caras del cubo son: `/`, `\`, `_` y (espacio en blanco).
+
+Otros ejemplos de cubos:
+```
+const cubeOfOne = createCube(1)
+
+/\_\
+\/_/
+```
+```
+const cubeOfTwo = createCube(2)
+
+ /\_\_\
+/\/\_\_\
+\/\/_/_/
+ \/_/_/
+```
+
+A tener en cuenta:
+
+- Fíjate bien en los espacios en blanco que hay en el cubo.
+- El cubo tiene que ser simétrico.
+- Asegúrate de usar los símbolos correctos.
+- Cada nueva línea del cubo debe terminar con un salto de línea (\n) excepto la última.
+
 ---
