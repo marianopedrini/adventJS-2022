@@ -9,7 +9,11 @@ function createCube(size) {
     let topSideRow = '_\\'.repeat(size);
     let bottomRow = '_/'.repeat(size);
     topParts = [...topParts, topFrontRow + topSideRow + '\n'];
-    bottomParts = [bottomFrontRow + bottomRow + '\n', ...bottomParts];
+    if (i != 1) {
+      bottomParts = [bottomFrontRow + bottomRow + '\n', ...bottomParts];
+    } else {
+      bottomParts = [bottomFrontRow + bottomRow, ...bottomParts];
+    }
     initialSpaces -= 1;
   }
   let result = `${topParts.join('')}${bottomParts.join('')}`;
